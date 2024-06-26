@@ -1,0 +1,127 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Base{% endblock title%}</title>
+  <link rel="stylesheet" href="{% static 'assets/css/style.css '%}">
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="{% static 'assets/css/splide.min.css'%}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+  <div id="skipnav">
+    <a href="#mainContent">Skip navigation</a>
+  </div>
+  <main id="mainContent">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="{% static 'assets/images/logo/Infy.gif'%}" class="img-fluid logo" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <li><a class="dropdown-item" href="#">Cloud Services</a></li>
+                    <li><a class="dropdown-item" href="#">Data Center Solution</a></li>
+                    <li><a class="dropdown-item" href="#">Cyber Security Solutions</a></li>
+                  </div>
+                  <div class="col-md-4">
+                    <li><a class="dropdown-item" href="#">IT-Managed Services</a></li>
+                    <li><a class="dropdown-item" href="#">Infrastructure Modernization</a></li>
+                    <li><a class="dropdown-item" href="#">Integration & Deployment</a></li>
+                  </div>
+                  <div class="col-md-4">
+                    <li><a class="dropdown-item" href="#">Network Security</a></li>
+                    <li><a class="dropdown-item" href="#">End User Computing</a></li>
+                    <li><a class="dropdown-item" href="#">UPS & Power Solutions</a></li>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Partners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  {% block content %}
+
+
+  {% endblock content%}
+  
+  </main>
+  <script src="{% static 'assets/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/js/script.js'%}"></script>
+  <script src="{% static 'assets/js/splide.min.js'%}"></script>
+  <script src="{% static 'assets/js/splide-auto-scroll.min.js'%}"></script>
+ 
+
+
+
+  <!--splide slides starts-->
+  <script>
+    new Splide('#slider1', {
+      type: 'loop',
+      autoScroll: {
+        speed: 2,
+      },
+    }).mount(window.splide.Extensions);
+  </script>
+   <script>
+    new Splide('#slider2', {
+      type: 'loop',
+      autoScroll: {
+        speed: 2,
+      },
+    }).mount(window.splide.Extensions);
+  </script>
+   <script>
+    new Splide('#slider3', {
+      type: 'loop',
+      autoScroll: {
+        speed: 2,
+      },
+    }).mount(window.splide.Extensions);
+  </script>
+  <!--splide slides Ends-->
+  <script>
+    
+  </script>
+</body>
+</html>

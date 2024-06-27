@@ -65,6 +65,54 @@ ul.dropdown-menu.show {
 a.dropdown-item {
     color: #fff;
 }
+.label-check {
+    display: none;
+  }
+  
+  .hamburger-label {
+    width: 40px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .hamburger-label div {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+  }
+  
+  .line1 {
+    transition: all .3s;
+  }
+  
+  .line2 {
+    margin: 10px 0 0 0;
+    transition: 0.3s;
+  }
+  
+  .line3 {
+    margin: 20px 0 0 0;
+    transition: 0.3s;
+  }
+  
+  #label-check:checked + .hamburger-label .line1 {
+    transform: rotate(35deg) scaleX(.55) translate(39px, -4.5px);
+    border-radius: 50px 50px 50px 0;
+  }
+  
+  #label-check:checked + .hamburger-label .line3 {
+    transform: rotate(-35deg) scaleX(.55) translate(39px, 4.5px);
+    border-radius: 0 50px 50px 50px;
+  }
+  
+  #label-check:checked + .hamburger-label .line2 {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 45px;
+  }
+ 
 /* Navbar section Ends */
 /*--Navbar scrolled starts--*/
 .navbar.scrolled{
@@ -223,7 +271,7 @@ section.getInT {
 
 }
 h4.grw {
-    font-size: 38px;
+    font-size: 50px;
     color: #fff;
 }
 h4.cont {
@@ -341,4 +389,14 @@ p.foottext {
 }
 .foot_links {
     margin-top: 30px;
+}
+a.design-link {
+    color: #ffffff4d;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+a.design-link:hover {
+    color: #fff;
+
+    
 }

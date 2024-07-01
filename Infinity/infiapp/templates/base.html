@@ -1,0 +1,409 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Base{% endblock title%}</title>
+  <link rel="stylesheet" href="{% static 'assets/css/style.css '%}">
+  <link rel="stylesheet" href="{% static 'assets/css/chatbot.css '%}">  
+  <link rel="stylesheet" href="{% static 'assets/css/contact.css '%}">
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="{% static 'assets/css/splide.min.css'%}">
+  <link rel="stylesheet" href="{% static 'assets/css/media.css'%}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+
+</head>
+
+<body>
+  <div id="skipnav">
+    <a href="#mainContent">Skip navigation</a>
+  </div>
+  <main id="mainContent">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="{% static 'assets/images/logo/Infy.gif'%}" class="img-fluid logo" alt="Logo">
+      </a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      
+      <a class="btn btn_canvas" data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
+        <input class="label-check" id="label-check" type="checkbox">
+        <label for="label-check" class="hamburger-label">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <label></label></label></div>
+      </a>
+
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasExampleLabel">
+        <button type="button" class="canva_cls" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <li><a class="dropdown-item" href="#">Cloud Services</a></li>
+                    <li><a class="dropdown-item" href="#">Data Center Solution</a></li>
+                    <li><a class="dropdown-item" href="#">Cyber Security Solutions</a></li>
+                  </div>
+                  <div class="col-md-4">
+                    <li><a class="dropdown-item" href="#">IT-Managed Services</a></li>
+                    <li><a class="dropdown-item" href="#">Infrastructure Modernization</a></li>
+                    <li><a class="dropdown-item" href="#">Integration & Deployment</a></li>
+                  </div>
+                  <div class="col-md-4">
+                    <li><a class="dropdown-item" href="#">Network Security</a></li>
+                    <li><a class="dropdown-item" href="#">End User Computing</a></li>
+                    <li><a class="dropdown-item" href="#">UPS & Power Solutions</a></li>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Partners</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </nav>
+
+
+  {% block content %}
+
+
+  {% endblock content%}
+
+  <!-- chatbot starts-->
+  <button class="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <header>
+      <h2>Chatbot</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Hi there 👋<br>How can I help you today?</p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    </div>
+  </div>
+
+  <!-- chatbot ends -->
+
+  <!--Footer starts-->
+<section class="footer">
+  <div class="container text-white">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="foot_logo">
+                  <img src="{% static 'assets/images/logo/Infy.gif'%}" class="img-fluid foot_img" alt="footer-Logo">
+              </div>
+              <p class="foottext text-white">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quod provident laudantium ad cumque aliquid. Minus itaque qui ratione similique repudiandae cumque esse soluta laboriosam!
+              </p>
+          </div>
+          <div class="col-md-3">
+              <div class="foot_head">
+                  <h4 class="food_h">
+                      Services
+                  </h4>
+              </div>
+              <div class="foot_links">
+                  <ul class="list-group">
+                      <li class="list-items">
+                          <a href="" class="list-links">Cloud Services</a>
+                      </li>
+                      <li class="list-items">
+                          <a href=""class="list-links">IT Services</a>
+                      </li>
+                      <li class="list-items"><a href="" class="list-links">Products</a>
+                      </li>
+                      
+                  </ul>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="foot_head">
+                  <h4 class="food_h">
+                      Services
+                  </h4>
+              </div>
+              <div class="foot_links">
+                  <ul class="list-group">
+                      <li class="list-items">
+                          <a href="" class="list-links">Cloud Services</a>
+                      </li>
+                      <li class="list-items"><a href="" class="list-links">IT Services</a>
+                      </li>
+                      <li class="list-items"><a href="" class="list-links">Products</a>
+                      </li>
+                      
+                  </ul>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="foot_head">
+                  <h4 class="food_h">
+                     Contact Us
+                  </h4>
+              </div>
+              <div class="foot_links">
+                  <ul class="list-group">
+                      <li class="list-items foot_cont">
+                          <a href="" class="list-loc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, est.</a>
+                      </li>
+                      <li class="list-items foot_cont">
+                          <a href=""  class="list-phone">
+                              +91 9874563210
+                          </a>
+                      </li>
+                      <li class="list-items foot_cont">
+                          <a href=""  class="list-mail">
+                              info@infydata.com
+                          </a>
+                      </li>
+                      <li class="list-items foot_cont">
+                          <a href=""  class="list-open_hours">
+                              Opening Hours : 10:00 Am - 6:00 Pm
+                          </a>
+                      </li>
+                  </ul>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <div class="social_links">
+                  <ul class="list-social">
+                      <li class="list-social-links">
+                          <a href="" class="inner-links">
+                              <i class="fa-brands fa-facebook-f socia "></i>
+                          </a>
+                      </li>
+                      <li class="list-social-links">
+                          <a href="" class="inner-links">
+                              <i class="fa-brands fa-linkedin-in socia"></i>
+                          </a>
+                      </li>
+                      <li class="list-social-links">
+                          <a href="" class="inner-links">
+                              <i class="fa-brands fa-twitter socia"></i>
+                          </a>
+                      </li>
+                      <li class="list-social-links">
+                          <a href="" class="inner-links">
+                              <i class="fa-brands fa-instagram socia"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <hr class="underline">
+          </div>
+      </div>
+      <div class="row text-center">
+          <div class="col-md-12">
+              <div class="copyrights">
+                  <p class="copyR">
+                     Copyright <i class="fa-solid fa-copyright"></i> 2024 - InfyData. All Rights Reserved
+                  </p>
+                  <p class="design">
+                    Design and Developed By <a href="https://aptsolglobal.com/" target="_blank" class="design-link">Aptsol Global Tech Pvt Ltd</a>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!--Footer Ends-->
+  
+  </main>
+  <script src="{% static 'assets/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/js/script.js'%}"></script>
+  <script src="{% static 'assets/js/splide.min.js'%}"></script>
+  <script src="{% static 'assets/js/splide-auto-scroll.min.js'%}"></script>
+
+
+
+ 
+
+
+
+  <!--splide slides starts-->
+  <script>
+    new Splide('#slider1', {
+      type: 'loop',
+      autoScroll: {
+        speed: 2,
+      },
+    }).mount(window.splide.Extensions);
+  </script>
+   <script>
+    new Splide('#slider2', {
+      type: 'loop',
+      autoScroll: {
+        speed: 2,
+      },
+    }).mount(window.splide.Extensions);
+  </script>
+   <script>
+    new Splide('#slider3', {
+      type: 'loop',
+      autoScroll: {
+        speed: 2,
+      },
+    }).mount(window.splide.Extensions);
+  </script>
+  <!--splide slides Ends-->
+
+  <!--Chatbot script starts-->
+  <script>
+    const chatbotToggler = document.querySelector(".chatbot-toggler");
+    const closeBtn = document.querySelector(".close-btn");
+    const chatbox = document.querySelector(".chatbox");
+    const chatInput = document.querySelector(".chat-input textarea");
+    const sendChatBtn = document.querySelector(".chat-input span");
+    
+    let userMessage = null; // Variable to store user's message
+    const API_KEY = "PASTE-YOUR-API-KEY"; // Paste your API key here
+    const inputInitHeight = chatInput.scrollHeight;
+    
+    const createChatLi = (message, className) => {
+      // Create a chat <li> element with passed message and className
+      const chatLi = document.createElement("li");
+      chatLi.classList.add("chat", `${className}`);
+      let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
+      chatLi.innerHTML = chatContent;
+      chatLi.querySelector("p").textContent = message;
+      return chatLi; // return chat <li> element
+    }
+    
+    const generateResponse = (chatElement) => {
+      const API_URL = "https://api.openai.com/v1/chat/completions";
+      const messageElement = chatElement.querySelector("p");
+    
+      // Define the properties and message for the API request
+      const requestOptions = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${API_KEY}`
+        },
+        body: JSON.stringify({
+          model: "gpt-3.5-turbo",
+          messages: [{ role: "user", content: userMessage }],
+        })
+      }
+    
+      // Send POST request to API, get response and set the response as paragraph text
+      fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
+        messageElement.textContent = data.choices[0].message.content.trim();
+      }).catch(() => {
+        messageElement.classList.add("error");
+        messageElement.textContent = "Oops! Something went wrong. Please try again.";
+      }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
+    }
+    
+    const handleChat = () => {
+      userMessage = chatInput.value.trim(); // Get user entered message and remove extra whitespace
+      if (!userMessage) return;
+    
+      // Clear the input textarea and set its height to default
+      chatInput.value = "";
+      chatInput.style.height = `${inputInitHeight}px`;
+    
+      // Append the user's message to the chatbox
+      chatbox.appendChild(createChatLi(userMessage, "outgoing"));
+      chatbox.scrollTo(0, chatbox.scrollHeight);
+    
+      setTimeout(() => {
+        // Display "Thinking..." message while waiting for the response
+        const incomingChatLi = createChatLi("Thinking...", "incoming");
+        chatbox.appendChild(incomingChatLi);
+        chatbox.scrollTo(0, chatbox.scrollHeight);
+        generateResponse(incomingChatLi);
+      }, 600);
+    }
+    
+    chatInput.addEventListener("input", () => {
+      // Adjust the height of the input textarea based on its content
+      chatInput.style.height = `${inputInitHeight}px`;
+      chatInput.style.height = `${chatInput.scrollHeight}px`;
+    });
+    
+    chatInput.addEventListener("keydown", (e) => {
+      // If Enter key is pressed without Shift key and the window 
+      // width is greater than 800px, handle the chat
+      if (e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
+        e.preventDefault();
+        handleChat();
+      }
+    });
+    
+    sendChatBtn.addEventListener("click", handleChat);
+    closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+    chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+    
+  </script>
+  <!--Chatbot script Ends-->
+
+
+
+<!-- Script for success Modal-->
+  <script type="text/javascript">
+    $(document).ready(function(){
+        {% if messages %}
+            $('#successModal').modal('show');
+        {% endif %}
+    });
+</script>
+<!-- Script for success Modal Ends-->
+</body>
+</html>

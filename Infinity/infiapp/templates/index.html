@@ -1,0 +1,411 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}
+InfyData_Home
+{% endblock title%}
+
+{% block content %}
+<!---Banner section starts-->
+<section class="banner_video mb-5">
+    <div class="video_bg">
+        <video autoplay muted loop id="bg-video">
+            <source src="{% static 'assets/video/bg_vid.mp4' %}" id="vid" type="video/mp4">
+        </video>
+        <div class="video_overlay">
+            <div class="container">
+                <div class="row text-white">
+                    <div class="col-md-12">
+                        <h1 class="ban_head">
+                            Pioneering Cloud and Data Solutions
+                        </h1>
+                        <p class="ban_text">
+                            Welcome to Infy Data, your trusted partner in the ever-evolving digital landscape. For over
+                            two decades, we have been at the forefront of providing cutting-edge cloud data storage,
+                            servers, IT products, and comprehensive solutions to our global clientele.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---Banner section Ends-->
+<!--Brands Partners starts-->
+<section class="splide mb-5" id="slider1" aria-label="carousel-heading">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="slide_head">
+                    Our Brand Partners
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="splide__track mb-5 mt-5">
+        <ul class="splide__list">
+            <li class="splide__slide"><img src="{% static 'assets/images/pcbrands/1.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/pcbrands/2.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/pcbrands/3.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/pcbrands/4.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/pcbrands/5.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/pcbrands/6.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/pcbrands/7.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/pcbrands/8.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/pcbrands/9.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/pcbrands/10.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+
+
+        </ul>
+    </div>
+</section>
+<!--Brands Partners Ends-->
+<section class="abt_legacy">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <div class="abt_h">
+                    <img src="{% static 'assets/images/about_us/About_head.gif' %}" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 text-white">
+                <div class="legacy_head">
+                    <h2>Our Legacy: 20 Years of Innovation and Excellence</h2>
+                </div>
+                <div class="legacy_text">
+                    <p>Established in the year 2000, Infy Data has consistently delivered top-tier IT infrastructure
+                        and management solutions. Our journey began with a vision to revolutionize the way
+                        businesses handle data. Today, we stand proud as global leaders in IT services, thanks to
+                        our relentless pursuit of innovation and excellence.</p>
+                </div>
+                <div class="legacy_head">
+                    <h2>A Team Driven by Passion for AI and Technology</h2>
+                </div>
+                <div class="legacy_text">
+                    <p> At the heart of Infy Data is a diverse team of professionals who share a common passion for
+                        artificial intelligence (AI), technology, and data. Our experts are not just skilled; they
+                        are visionaries dedicated to pushing the boundaries of what’s possible in IT.</p>
+                </div>
+                <div class="legacy_head">
+                    <h2>Global Reach, Local Impact</h2>
+                </div>
+                <div class="legacy_text">
+                    <p>Our services transcend borders, yet we remain committed to making a significant impact in
+                        every community we serve. Infy Data’s solutions are designed to empower businesses worldwide
+                        while fostering growth and driving progress</p>
+                </div>
+            </div>
+            <div class="col-md-6 mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-6 mb-3">
+                        <div class="card About_ser">
+                            <div class="card-img">
+                                <img src="{% static 'assets/images/about_us/1.png'%}" class="img-fluid" alt="">
+
+                            </div>
+                            <div class="card_title">
+                                <h3>Cloud Data Storage</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card About_ser">
+                            <div class="card-img">
+                                <img src="{% static 'assets/images/about_us/2.png'%}" class="img-fluid" alt="">
+                            </div>
+                            <div class="card_title">
+                                <h3>Servers</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card About_ser">
+                            <div class="card-img">
+                                <img src="{% static 'assets/images/about_us/3.png'%}" class="img-fluid" alt="">
+                            </div>
+                            <div class="card_title">
+                                <h3>IT Products</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card About_ser">
+                            <div class="card-img">
+                                <img src="{% static 'assets/images/about_us/4.png'%}" class="img-fluid" alt="">
+                            </div>
+                            <div class="card_title">
+                                <h3>Solutions</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--About starts--
+<section class="legacy mb-5 mt-5">
+    <video autoplay muted loop id="about_bg_video">
+        <source src="{% static 'assets/video/Abt_Bg.mp4' %}" class="object-fit-cover" type="video/mp4">
+    </video>
+    <div class="overlay_abt">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <div class="abt_h">
+                        <img src="{% static 'assets/images/about_us/About_head.gif' %}" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 text-white">
+                    <div class="legacy_head">
+                        <h2>Our Legacy: 20 Years of Innovation and Excellence</h2>
+                    </div>
+                    <div class="legacy_text">
+                        <p>Established in the year 2000, Infy Data has consistently delivered top-tier IT infrastructure
+                            and management solutions. Our journey began with a vision to revolutionize the way
+                            businesses handle data. Today, we stand proud as global leaders in IT services, thanks to
+                            our relentless pursuit of innovation and excellence.</p>
+                    </div>
+                    <div class="legacy_head">
+                        <h2>A Team Driven by Passion for AI and Technology</h2>
+                    </div>
+                    <div class="legacy_text">
+                        <p> At the heart of Infy Data is a diverse team of professionals who share a common passion for
+                            artificial intelligence (AI), technology, and data. Our experts are not just skilled; they
+                            are visionaries dedicated to pushing the boundaries of what’s possible in IT.</p>
+                    </div>
+                    <div class="legacy_head">
+                        <h2>Global Reach, Local Impact</h2>
+                    </div>
+                    <div class="legacy_text">
+                        <p>Our services transcend borders, yet we remain committed to making a significant impact in
+                            every community we serve. Infy Data’s solutions are designed to empower businesses worldwide
+                            while fostering growth and driving progress</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card About_ser">
+                                <div class="card-img">
+                                    <img src="{% static 'assets/images/about_us/1.png'%}" class="img-fluid" alt="">
+
+                                </div>
+                                <div class="card_title">
+                                    <h3>Cloud Data Storage</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card About_ser">
+                                <div class="card-img">
+                                    <img src="{% static 'assets/images/about_us/2.png'%}" class="img-fluid" alt="">
+                                </div>
+                                <div class="card_title">
+                                    <h3>Servers</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card About_ser">
+                                <div class="card-img">
+                                    <img src="{% static 'assets/images/about_us/3.png'%}" class="img-fluid" alt="">
+                                </div>
+                                <div class="card_title">
+                                    <h3>IT Products</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card About_ser">
+                                <div class="card-img">
+                                    <img src="{% static 'assets/images/about_us/4.png'%}" class="img-fluid" alt="">
+                                </div>
+                                <div class="card_title">
+                                    <h3>Solutions</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--ABout ends-->
+<!--Partners in Networking starts-->
+<section class="splide mb-5 mt-5" id="slider2" aria-label="carousel-heading">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="slide_head">
+                    Partners in Networking
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="splide__track mb-5 mt-5">
+        <ul class="splide__list">
+            <li class="splide__slide"><img src="{% static 'assets/images/network_brands/1.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/network_brands/2.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/network_brands/3.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/network_brands/4.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/network_brands/5.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/network_brands/6.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/network_brands/7.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/network_brands/8.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/network_brands/9.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/network_brands/10.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+
+        </ul>
+    </div>
+</section>
+<!--Partners in Networking ends-->
+
+<section class="infi_services">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-md-12">
+                <h2 class="slide_head">
+                    Services
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-5 mt-5">
+                <div class="card serv_card">
+                    <div class="card_img">
+                        <img src="{% static 'assets/images/services/cloud_ai.png'%}" class="img-fluid shift_right" alt="services_1">
+                    </div>
+                    <div class="card_content">
+                        <div class="card_head">
+                            <h3 class="ser_text">Cloud Services</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5 mb-5">
+                <div class="card serv_card">
+                    <div class="card_img">
+                        <img src="{% static 'assets/images/services/sol.png'%}" class="img-fluid shift_right" alt="">
+                    </div>
+                    <div class="card_content">
+                        <div class="card_head">
+                            <h3 class="ser_text mid">IT Solutions</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5 mb-5">
+                <div class="card serv_card">
+                    <div class="card_img">
+                        <img src="{% static 'assets/images/services/pro.png'%}" class="img-fluid shift_right" alt="">
+                    </div>
+                    <div class="card_content">
+                        <div class="card_head">
+                            <h3 class="ser_text rig">Products</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Partners in Cloud starts-->
+<section class="splide mb-5 mt-5" id="slider3" aria-label="carousel-heading">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="slide_head">
+                    Partners in Cloud
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="splide__track mb-5 mt-5">
+        <ul class="splide__list">
+            <li class="splide__slide"><img src="{% static 'assets/images/cloud_brands/1.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/cloud_brands/2.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/cloud_brands/3.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/cloud_brands/4.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/cloud_brands/5.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/cloud_brands/6.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/cloud_brands/7.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/cloud_brands/8.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/cloud_brands/9.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+            <li class="splide__slide"><img src="{% static 'assets/images/cloud_brands/10.png'%}" class="img-fluid"
+                    alt="Brand_Partners"></li>
+        </ul>
+    </div>
+</section>
+<!--Partners in Cloud Ends-->
+
+<!---Get In touch starts-->
+<section class="getInT">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="get_text text-center">
+                    <h4 class="grw">Step forward to become a Cloud Smart Company</h4>
+                    <!-- <h4 class="cont">Contact Us</h4> -->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="btn_get text-center">
+                    <a href="{% url 'contact' %}" class="btn btn-primary inbtn">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---Get In touch Ends-->
+
+
+
+
+{% endblock %}

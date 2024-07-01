@@ -1,0 +1,68 @@
+.contact-us {
+    background: linear-gradient(90deg, rgba(4,59,92,0.8800770308123249) 100%, rgba(4,59,92,0.8072478991596639) 100%), url('../images/contact.png') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-control {
+    background: none !important;
+    border: none !important;
+    border-bottom: 2px solid #fff !important;
+    color: white !important; /* Ensure entered text is white */
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.contact-us h2,
+.contact-us label,
+.contact-us .modal-title,
+.contact-us .modal-body,
+.contact-us .modal-footer button {
+    color: white;
+}
+
+.contact-us .row {
+    padding: 10px;
+}
+
+.contact-us .form-group {
+    padding: 10px 0;
+}
+
+.custom-input {
+    border-radius: 0 !important;
+    /* Add more custom styles here if needed */
+}
+
+.custom-btn {
+    border-radius: 0;
+    padding: 10px 20px !important;
+    /* Add more custom styles here if needed */
+}
+
+/* Add custom styles for valid and invalid feedback */
+.was-validated .form-control:valid,
+.was-validated .form-control.is-valid {
+    border-bottom-color: #28a745; /* Green border for valid input */
+}
+
+.was-validated .form-control:invalid,
+.was-validated .form-control.is-invalid {
+    border-bottom-color: #dc3545; /* Red border for invalid input */
+}
+
+.was-validated .form-control:valid ~ .valid-feedback,
+.was-validated .form-control.is-valid ~ .valid-feedback  {
+    display: block;
+}
+
+.was-validated .form-control:invalid ~ .invalid-feedback,
+.was-validated .form-control.is-invalid ~ .invalid-feedback {
+    display: block;
+}

@@ -16,6 +16,30 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -29,6 +53,22 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -57,6 +97,14 @@
     },
     {
         "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -96,6 +144,14 @@
         "documentation": {}
     },
     {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -118,6 +174,14 @@
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "innerpages",
+        "description": "innerpages",
+        "isExtraImport": true,
+        "detail": "innerpages",
         "documentation": {}
     },
     {
@@ -206,7 +270,7 @@
         "kind": 5,
         "importPath": "Infinity.settings",
         "description": "Infinity.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'infiapp',\n]\nMIDDLEWARE = [",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'infiapp',\n    'innerpages',\n]",
         "detail": "Infinity.settings",
         "documentation": {}
     },
@@ -332,7 +396,7 @@
         "kind": 5,
         "importPath": "Infinity.urls",
         "description": "Infinity.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path(\"\",include('infiapp.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path(\"\",include('infiapp.urls')),\n    path(\"\",include('innerpages.urls')),\n]",
         "detail": "Infinity.urls",
         "documentation": {}
     },
@@ -343,6 +407,51 @@
         "description": "Infinity.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "Infinity.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "InnerpagesConfig",
+        "kind": 6,
+        "importPath": "innerpages.apps",
+        "description": "innerpages.apps",
+        "peekOfCode": "class InnerpagesConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'innerpages'",
+        "detail": "innerpages.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "innerpages.urls",
+        "description": "innerpages.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"contact\",views.contact,name=\"contact\"),\n    path(\"Virtualization\",views.Virtualization,name=\"Virtualization\"),\n    path(\"migrations_page\",views.migrations_page,name=\"migrations_page\"),\n]",
+        "detail": "innerpages.urls",
+        "documentation": {}
+    },
+    {
+        "label": "contact",
+        "kind": 2,
+        "importPath": "innerpages.views",
+        "description": "innerpages.views",
+        "peekOfCode": "def contact(request):\n    return render(request,\"contact.html\")\ndef Virtualization(request):\n    return render(request,\"Virtualization.html\")\ndef migrations_page(request):\n    return render(request,\"migrations_page.html\")",
+        "detail": "innerpages.views",
+        "documentation": {}
+    },
+    {
+        "label": "Virtualization",
+        "kind": 2,
+        "importPath": "innerpages.views",
+        "description": "innerpages.views",
+        "peekOfCode": "def Virtualization(request):\n    return render(request,\"Virtualization.html\")\ndef migrations_page(request):\n    return render(request,\"migrations_page.html\")",
+        "detail": "innerpages.views",
+        "documentation": {}
+    },
+    {
+        "label": "migrations_page",
+        "kind": 2,
+        "importPath": "innerpages.views",
+        "description": "innerpages.views",
+        "peekOfCode": "def migrations_page(request):\n    return render(request,\"migrations_page.html\")",
+        "detail": "innerpages.views",
         "documentation": {}
     },
     {

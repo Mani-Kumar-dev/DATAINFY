@@ -53,13 +53,13 @@ ul.dropdown-menu {
     padding: 85% 0%;
     width: 100vw;
     height: 35vh;
-    left: -987%;
+    left: -1340%;
     top: 100%;
     background:#043b5c;
     border:none;
 }
 ul.dropdown-menu.show {
-    margin:-12% 0 0 -1009%;
+    margin: 4% 0 0 -1340%;
     padding: 85% 0%;
 }
 a.dropdown-item {
@@ -258,6 +258,51 @@ img.img-fluid.shift_right {
     border-radius: 15px;
 }
 /**services--ends--*/
+/*----What we offer starts--*/
+.card.weocard {
+    border: none;
+    background:linear-gradient(90deg, rgba(4,59,92,0.6167717086834734) 0%, rgba(4,59,92,0.8436624649859944) 0%), url(../images/whatweare/dataenter.png) no-repeat;
+    background-size: cover;
+    padding: 30px;
+    background-position: center;
+    height: 50vh;
+}
+.weo_head h4 {
+    color: #fff;
+    
+    margin: 0 0 25px 0;
+    font-size: 30px;
+}
+.extra_img {
+    width: 50%;
+    margin: 30px auto;
+}
+.head_ext {
+    margin: 0 0 12px 0;
+}
+.card.extraser {
+    padding: 20px;
+    height: 50vh;
+    text-align: center;
+    background:#043b5c;
+    color: #fff;
+}
+.extra_img.manage {
+    width: 34%;
+}
+a.whtlinks {
+    position: relative;
+}
+a.whtlinks::before {
+    position: absolute;
+    content: "\f0da";
+    font-family: 'FontAwesome';
+    left: -15px;
+    font-size: 18px;
+    top: -1px;
+}
+
+/*----What we offer Ends--*/
 
 section#slider3 {
     margin-top: 8%;
@@ -400,3 +445,103 @@ a.design-link:hover {
 
     
 }
+
+
+/*----Inner Pages---*/
+/*--Technology starts--*/
+section.inner_banner{
+    background:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.768032212885154) 0%),url("../images/Technology/tech.jpg") no-repeat;
+    background-size: cover;
+    height: 35vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+.inner_head {
+    margin: 6% 0 0 0;
+    display: inline-flex;
+    align-items: self-end;
+    width: 100%;
+    justify-content: space-between;
+}
+.inner_head1 {
+    color: #fff;
+    font-size: 40px;
+}
+ul.breadcrumbs {
+    list-style: none;
+}
+a.bread_crumbs_links {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+}
+.image_inner {
+    width: 75%;
+    margin: 0 auto;
+}
+.inner_tech_head h2 {
+    color: #043b5c;
+    font-size: 35px;
+    font-weight: 600;
+}
+.inner_tech_head {
+    margin: 40px 0 0 0;
+}
+.inner_tech_content p {
+    margin: 50px 0 0 0;
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: 0px;
+    word-spacing: -1px;
+    font-size: 18px;
+}
+.card.inner_card {
+    background: #043b5c;
+    color: #fff;
+    padding: 28px;
+    height: 22vh;
+    margin: 35px 0 25px 0;
+    text-align: -webkit-center;
+    transition: all 0.3s ease;
+}
+.card.inner_card:hover{
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+}
+
+.card_inner_head h4 {
+    font-size: 20px;
+    margin: 12px 0 0 0;
+}
+img.img-fluid.techno {
+    border-radius: 5px 60px;
+}
+.inner_tech_migra {
+    margin: 40px 0 40px 0;
+}
+.para_mig p {
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0px;
+    word-spacing: -2.5px;
+}
+.inner_tech_migra h2 {
+    color: #043b5c;
+    font-size: 28px;
+}
+.card.migrat {
+    background: #043b5c;
+    color: #fff;
+    height: 30vh;
+    padding: 50px;
+    margin: 0 0 30px 0;
+}
+.card_inner_head h4 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+.inner_migra_con p {
+    text-align: center;
+}
+/*--Technology ends--*/

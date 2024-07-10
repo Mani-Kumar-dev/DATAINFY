@@ -423,7 +423,7 @@
         "kind": 5,
         "importPath": "innerpages.urls",
         "description": "innerpages.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"contact\",views.contact,name=\"contact\"),\n    path(\"Virtualization\",views.Virtualization,name=\"Virtualization\"),\n    path(\"migrations_page\",views.migrations_page,name=\"migrations_page\"),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"contact\",views.contact,name=\"contact\"),\n    path(\"Virtualization\",views.Virtualization,name=\"Virtualization\"),\n    path(\"migrations_page\",views.migrations_page,name=\"migrations_page\"),\n     path(\"security\",views.security,name=\"security\"),\n    path(\"mobility\",views.mobility,name=\"mobility\"),\n    path(\"storage\",views.storage,name=\"storage\"),\n    path(\"backup\",views.backup,name=\"backup\"),\n]",
         "detail": "innerpages.urls",
         "documentation": {}
     },
@@ -432,7 +432,7 @@
         "kind": 2,
         "importPath": "innerpages.views",
         "description": "innerpages.views",
-        "peekOfCode": "def contact(request):\n    return render(request,\"contact.html\")\ndef Virtualization(request):\n    return render(request,\"Virtualization.html\")\ndef migrations_page(request):\n    return render(request,\"migrations_page.html\")",
+        "peekOfCode": "def contact(request):\n    return render(request,\"contact.html\")\ndef Virtualization(request):\n    return render(request,\"Virtualization.html\")\ndef migrations_page(request):\n    return render(request,\"migrations_page.html\")\ndef security(request):\n    return render(request,\"security.html\")\ndef mobility(request):\n    return render(request,\"mobility.html\")",
         "detail": "innerpages.views",
         "documentation": {}
     },
@@ -441,7 +441,7 @@
         "kind": 2,
         "importPath": "innerpages.views",
         "description": "innerpages.views",
-        "peekOfCode": "def Virtualization(request):\n    return render(request,\"Virtualization.html\")\ndef migrations_page(request):\n    return render(request,\"migrations_page.html\")",
+        "peekOfCode": "def Virtualization(request):\n    return render(request,\"Virtualization.html\")\ndef migrations_page(request):\n    return render(request,\"migrations_page.html\")\ndef security(request):\n    return render(request,\"security.html\")\ndef mobility(request):\n    return render(request,\"mobility.html\")\ndef backup(request):\n    return render(request,\"backup.html\")",
         "detail": "innerpages.views",
         "documentation": {}
     },
@@ -450,7 +450,43 @@
         "kind": 2,
         "importPath": "innerpages.views",
         "description": "innerpages.views",
-        "peekOfCode": "def migrations_page(request):\n    return render(request,\"migrations_page.html\")",
+        "peekOfCode": "def migrations_page(request):\n    return render(request,\"migrations_page.html\")\ndef security(request):\n    return render(request,\"security.html\")\ndef mobility(request):\n    return render(request,\"mobility.html\")\ndef backup(request):\n    return render(request,\"backup.html\")\ndef storage(request):\n    return render(request,\"storage.html\")",
+        "detail": "innerpages.views",
+        "documentation": {}
+    },
+    {
+        "label": "security",
+        "kind": 2,
+        "importPath": "innerpages.views",
+        "description": "innerpages.views",
+        "peekOfCode": "def security(request):\n    return render(request,\"security.html\")\ndef mobility(request):\n    return render(request,\"mobility.html\")\ndef backup(request):\n    return render(request,\"backup.html\")\ndef storage(request):\n    return render(request,\"storage.html\")",
+        "detail": "innerpages.views",
+        "documentation": {}
+    },
+    {
+        "label": "mobility",
+        "kind": 2,
+        "importPath": "innerpages.views",
+        "description": "innerpages.views",
+        "peekOfCode": "def mobility(request):\n    return render(request,\"mobility.html\")\ndef backup(request):\n    return render(request,\"backup.html\")\ndef storage(request):\n    return render(request,\"storage.html\")",
+        "detail": "innerpages.views",
+        "documentation": {}
+    },
+    {
+        "label": "backup",
+        "kind": 2,
+        "importPath": "innerpages.views",
+        "description": "innerpages.views",
+        "peekOfCode": "def backup(request):\n    return render(request,\"backup.html\")\ndef storage(request):\n    return render(request,\"storage.html\")",
+        "detail": "innerpages.views",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "kind": 2,
+        "importPath": "innerpages.views",
+        "description": "innerpages.views",
+        "peekOfCode": "def storage(request):\n    return render(request,\"storage.html\")",
         "detail": "innerpages.views",
         "documentation": {}
     },

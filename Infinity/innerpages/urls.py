@@ -6,6 +6,10 @@ urlpatterns = [
     path("contact",views.contact,name="contact"),
     path("Virtualization",views.Virtualization,name="Virtualization"),
     path("migrations_page",views.migrations_page,name="migrations_page"),
+     path("security",views.security,name="security"),
+    path("mobility",views.mobility,name="mobility"),
+    path("storage",views.storage,name="storage"),
+    path("backup",views.backup,name="backup"),
     
     
 ]

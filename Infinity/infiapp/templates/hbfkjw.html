@@ -1,0 +1,280 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Contact Us
+{% endblock title %}
+
+{% block content %}
+<!-- Link to the new CSS file -->
+
+<!--inner banner Head starts-->
+<section class="inner_banner_contact mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner_head">
+                    <div class="innerflex">
+                        <h3 class="inner_head1">
+                            Contact DataInfy
+                        </h3>
+                    </div>
+                    <div class="innerflex">
+                        <ul class="breadcrumbs d-flex">
+                            <li class="breadccrumbs_items">
+                                <a href="/" class="bread_crumbs_links">Home</a>
+                            </li>
+                            <li class="breadccrumbs_items text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            
+                            <li class="breadccrumbs_items">
+                                <a href="" class="bread_crumbs_links">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--inner banner Head ends-->
+<section class="contact-us">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <form method="post" action="{% url 'contact' %}" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control custom-input" id="first_name" name="first_name" placeholder="First Name" required>
+                                <label for="first_name">First Name</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your first name.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control custom-input" id="company_name" name="company_name" placeholder="Company Name" required>
+                                <label for="company_name">Company Name</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your company name.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <select class="form-select custom-input" id="phone_type" name="phone_type" required>
+                                    <option value="">Select Phone Type</option>
+                                    <option value="business">Business</option>
+                                    <option value="personal">Personal</option>
+                                </select>
+                                <label for="phone_type">Phone Type</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please select a phone type.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control custom-input" id="job_title" name="job_title" placeholder="Job Title" required>
+                                <label for="job_title">Job Title</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your job title.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control custom-input" id="job_role" name="job_role" placeholder="Job Role" required>
+                                <label for="job_role">Job Role</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your job role.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <select class="form-select custom-input" id="country" name="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="us">United States</option>
+                                    <option value="ca">Canada</option>
+                                    <!-- Add more countries as needed -->
+                                </select>
+                                <label for="country">Country</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please select a country.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <select class="form-select custom-input" id="city" name="city" required>
+                                    <option value="">Select City</option>
+                                    <option value="la">Los Angeles</option>
+                                    <option value="nyc">New York City</option>
+                                    <!-- Add more cities as needed -->
+                                </select>
+                                <label for="city">City</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please select a city.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control custom-input" id="last_name" name="last_name" placeholder="Last Name" required>
+                                <label for="last_name">Last Name</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your last name.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control custom-input" id="work_email" name="work_email" placeholder="Work Email" required>
+                                <label for="work_email">Work Email</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter a valid work email address.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control custom-input" id="phone_number" name="phone_number" placeholder="Phone Number" required>
+                                <label for="phone_number">Phone Number</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your phone number.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control custom-input" id="department" name="department" placeholder="Department" required>
+                                <label for="department">Department</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your department.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <select class="form-select custom-input" id="state" name="state" required>
+                                    <option value="">Select State</option>
+                                    <option value="ca">California</option>
+                                    <option value="ny">New York</option>
+                                    <!-- Add more states as needed -->
+                                </select>
+                                <label for="state">State</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please select a state.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control custom-input" id="zip_code" name="zip_code" placeholder="Zip Code" required>
+                                <label for="zip_code">Zip Code</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your zip code.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control custom-input" id="address" name="address" placeholder="Address" required>
+                                <label for="address">Address</label>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your Address.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control custom-input" id="message" name="message" placeholder="Message" style="height: 150px;" required></textarea>
+                        <label for="message">Message</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter your message.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary inbtn" id="myButton">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for success message 
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Success</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Your enquiry is submitted successfully and we will get back to you soon.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<script>
+(function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+})()
+
+document.getElementById('myButton').addEventListener('click', function() {
+    Swal.fire({
+      title: 'Sent!',
+      text: 'Your message has been sent. We will get back to you soon!',
+      icon: 'success'
+    });
+  });
+  
+
+</script>
+{% endblock content %}

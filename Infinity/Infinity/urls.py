@@ -21,5 +21,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("",include('infiapp.urls')),
     path("",include('innerpages.urls')),
-    
 ]

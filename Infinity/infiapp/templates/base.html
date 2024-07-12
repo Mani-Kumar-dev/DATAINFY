@@ -11,36 +11,47 @@
   <link rel="stylesheet" href="{% static 'assets/css/splide.min.css'%}">
   <link rel="stylesheet" href="{% static 'assets/css/media.css'%}">
   <link rel="stylesheet" href="{% static 'assets/css/chatbot.css'%}">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet" href="{% static 'assets/css/contact.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/sweetalert2.min.css' %}">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
 
 <body>
-  <div id="skipnav">
+  <div class="skipnav">
     <a href="#mainContent">Skip navigation</a>
   </div>
   <main id="mainContent">
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="/">
-        <img src="{% static 'assets/images/logo/Infy.gif'%}" class="img-fluid logo" alt="Logo">
-      </a>
-      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="{% static 'assets/images/logo/Infy.gif'%}" class="img-fluid logo" alt="Logo">
+        </a>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button> -->
-      
-      <a class="btn btn_canvas" data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
-        <input class="label-check" id="label-check" type="checkbox">
-        <label for="label-check" class="hamburger-label">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-        <label></label></label></div>
+
+        <a class="btn btn_canvas" data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button"
+          aria-controls="offcanvasNavbar">
+          <input class="label-check" id="label-check" type="checkbox">
+          <label for="label-check" class="hamburger-label">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <label></label>
+          </label>
+      </div>
       </a>
 
       <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
@@ -50,270 +61,279 @@
         </button>
         <div class="offcanvas-body">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
-            <ul class="dropdown-menu text-center">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-4">
-                    <li><a class="dropdown-item" href="#">Cloud Services</a></li>
-                    <li><a class="dropdown-item" href="#">Data Center Solution</a></li>
-                    <li><a class="dropdown-item" href="#">Cyber Security Solutions</a></li>
-                  </div>
-                  <div class="col-md-4">
-                    <li><a class="dropdown-item" href="#">IT-Managed Services</a></li>
-                    <li><a class="dropdown-item" href="#">Infrastructure Modernization</a></li>
-                    <li><a class="dropdown-item" href="#">Integration & Deployment</a></li>
-                  </div>
-                  <div class="col-md-4">
-                    <li><a class="dropdown-item" href="#">Network Security</a></li>
-                    <li><a class="dropdown-item" href="#">End User Computing</a></li>
-                    <li><a class="dropdown-item" href="#">UPS & Power Solutions</a></li>
-                  </div>
-                </div>
-              </div>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Solutions
-            </a>
-            <ul class="dropdown-menu text-center">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-4">
-                    <li><a class="dropdown-item" href="/Virtualization">Virtualization</a></li>
-                    <li><a class="dropdown-item" href="/backup">Backup</a></li>
-                  </div>
-                  <div class="col-md-4">
-                    <li><a class="dropdown-item" href="/migrations_page">Migration</a></li>
-                    <li><a class="dropdown-item" href="/mobility">Mobility</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
 
-                  </div>
-                  <div class="col-md-4">
-                    <li><a class="dropdown-item" href="/security">Security</a></li>
-                    <li><a class="dropdown-item" href="/storage">Storage</a></li>
-                    
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu responsive">
+                <li><a class="dropdown-item list-links" href="#">Cloud Services</a></li>
+                <li><a class="dropdown-item list-links" href="#">Data Center Solution</a></li>
+                <li><a class="dropdown-item list-links" href="#">Cyber Security Solutions</a></li>
+                <li><a class="dropdown-item list-links" href="#">IT-Managed Services</a></li>
+                <li><a class="dropdown-item list-links" href="#">Infrastructure Modernization</a></li>
+                <li><a class="dropdown-item list-links" href="#">Integration & Deployment</a></li>
+                <li><a class="dropdown-item list-links" href="#">Network Security</a></li>
+                <li><a class="dropdown-item list-links" href="#">End User Computing</a></li>
+                <li><a class="dropdown-item list-links" href="#">UPS & Power Solutions</a></li>
+              </ul>
+              <ul class="dropdown-menu text-center">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <li><a class="dropdown-item" href="#">Cloud Services</a></li>
+                      <li><a class="dropdown-item" href="#">Data Center Solution</a></li>
+                      <li><a class="dropdown-item" href="#">Cyber Security Solutions</a></li>
+                    </div>
+                    <div class="col-md-4">
+                      <li><a class="dropdown-item" href="#">IT-Managed Services</a></li>
+                      <li><a class="dropdown-item" href="#">Infrastructure Modernization</a></li>
+                      <li><a class="dropdown-item" href="#">Integration & Deployment</a></li>
+                    </div>
+                    <div class="col-md-4">
+                      <li><a class="dropdown-item" href="#">Network Security</a></li>
+                      <li><a class="dropdown-item" href="#">End User Computing</a></li>
+                      <li><a class="dropdown-item" href="#">UPS & Power Solutions</a></li>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Clients</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Partners</a>
-          </li>
-          <!-- <li class="nav-item">
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Solutions <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu responsive">
+                <li><a class="dropdown-item list-links" href="/Virtualization">Virtualization</a></li>
+                <li><a class="dropdown-item list-links" href="/backup">Backup</a></li>
+                <li><a class="dropdown-item list-links" href="/migrations_page">Migration</a></li>
+                <li><a class="dropdown-item list-links" href="/mobility">Mobility</a></li>
+                <li><a class="dropdown-item list-links" href="/security">Security</a></li>
+                <li><a class="dropdown-item list-links" href="/storage">Storage</a></li>
+              </ul>
+              <ul class="dropdown-menu text-center">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <li><a class="dropdown-item" href="/Virtualization">Virtualization</a></li>
+                      <li><a class="dropdown-item" href="/backup">Backup</a></li>
+                    </div>
+                    <div class="col-md-4">
+                      <li><a class="dropdown-item" href="/migrations_page">Migration</a></li>
+                      <li><a class="dropdown-item" href="/mobility">Mobility</a></li>
+
+                    </div>
+                    <div class="col-md-4">
+                      <li><a class="dropdown-item" href="/security">Security</a></li>
+                      <li><a class="dropdown-item" href="/storage">Storage</a></li>
+
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Partners</a>
+            </li>
+            <!-- <li class="nav-item">
             <a class="nav-link" href="#">Blogs</a>
           </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
-  </nav>
-
-
-  {% block content %}
-
-
-  {% endblock content%}
-
-
-    <!-- chatbot starts-->
-    <button class="chatbot-toggler">
-      <span class="material-symbols-rounded">mode_comment</span>
-      <span class="material-symbols-outlined">close</span>
-    </button>
-    <div class="chatbot">
-      <header>
-        <h2>Chatbot</h2>
-        <span class="close-btn material-symbols-outlined">close</span>
-      </header>
-      <ul class="chatbox">
-        <li class="chat incoming">
-          <span class="material-symbols-outlined">smart_toy</span>
-          <p>Hi there 👋<br>How can I help you today?</p>
-        </li>
-      </ul>
-      <div class="chat-input">
-        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
-        <span id="send-btn" class="material-symbols-rounded">send</span>
       </div>
-    </div>
-  
-    <!-- chatbot ends -->
- <!--Footer starts-->
- <section class="footer">
-  <div class="container text-white">
-      <div class="row">
+    </nav>
+
+
+    {% block content %}
+
+
+    {% endblock content%}
+
+
+    <!--Footer starts-->
+    <section class="footer">
+      <div class="container text-white">
+        <div class="row">
           <div class="col-md-3">
-              <div class="foot_logo">
-                  <img src="{% static 'assets/images/logo/Infy.gif'%}" class="img-fluid foot_img" alt="footer-Logo">
-              </div>
-              <p class="foottext text-white">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quod provident laudantium ad cumque aliquid. Minus itaque qui ratione similique repudiandae cumque esse soluta laboriosam!
+            <div class="foot_logo">
+              <img src="{% static 'assets/images/logo/Infy.gif'%}" class="img-fluid foot_img" alt="footer-Logo">
+            </div>
+            <p class="foottext text-white">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quod provident laudantium ad cumque
+              aliquid. Minus itaque qui ratione similique repudiandae cumque esse soluta laboriosam!
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="foot_head">
+              <h4 class="food_h">
+                Services
+              </h4>
+            </div>
+            <div class="foot_links">
+              <ul class="list-group">
+                <li class="list-items"><a href="" class="list-links">Cloud Services</a>
+                </li>
+                <li class="list-items"><a href="" class="list-links">IT-Managed Services</a>
+                </li>
+                <li class="list-items"><a href="" class="list-links">Network Security</a>
+                </li>
+                <li class="list-items"><a href="" class="list-links">Data Center Solution</a>
+                </li>
+                <li class="list-items"><a href="" class="list-links">Infrastucture Modernization</a>
+                </li>
+                <li class="list-items"><a href="" class="list-links">End User Computing</a>
+                </li>
+                <li class="list-items"><a href="" class="list-links">Cyber Security Solutions</a>
+                </li>
+                <li class="list-items"><a href="" class="list-links">Integration & Deployment</a>
+                </li>
+                <li class="list-items"><a href="" class="list-links">UPS & Power Solutions</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="foot_head">
+              <h4 class="food_h">
+                Solutions
+              </h4>
+            </div>
+            <div class="foot_links">
+              <ul class="list-group">
+                <li class="list-items"><a href="/Virtualization" class="list-links">Virtualization</a>
+                </li>
+                <li class="list-items"><a href="/migrations_page" class="list-links">Migration</a>
+                </li>
+                <li class="list-items"><a href="/security" class="list-links">Security</a>
+                </li>
+                <li class="list-items"><a href="/backup" class="list-links">Backup</a>
+                </li>
+                <li class="list-items"><a href="/mobility" class="list-links">Mobility</a>
+                </li>
+                <li class="list-items"><a href="/storage" class="list-links">Storage</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="foot_head">
+              <h4 class="food_h">
+                Contact Us
+              </h4>
+            </div>
+            <div class="foot_links">
+              <ul class="list-group">
+                <li class="list-items foot_cont">
+                  <a href="" class="list-loc">Aptsol Global Tech Pvt. Ltd
+                    Imperial Square, 1st Floor, HUDA Techno Enclave
+                    Beside Medicover Hospitals
+                    HITECH City Hyderabad, Telangana 500081</a>
+                </li>
+                <li class="list-items foot_cont">
+                  <a href="" class="list-phone">
+                    +91 9874563210
+                  </a>
+                </li>
+                <li class="list-items foot_cont">
+                  <a href="" class="list-mail">
+                    info@infydata.com
+                  </a>
+                </li>
+                <li class="list-items foot_cont">
+                  <a href="" class="list-open_hours">
+                    Opening Hours : 10:00 Am - 6:00 Pm
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="social_links">
+              <ul class="list-social">
+                <li class="list-social-links">
+                  <a href="" class="inner-links">
+                    <i class="fa-brands fa-facebook-f socia "></i>
+                  </a>
+                </li>
+                <li class="list-social-links">
+                  <a href="" class="inner-links">
+                    <i class="fa-brands fa-linkedin-in socia"></i>
+                  </a>
+                </li>
+                <li class="list-social-links">
+                  <a href="" class="inner-links">
+                    <i class="fa-brands fa-twitter socia"></i>
+                  </a>
+                </li>
+                <li class="list-social-links">
+                  <a href="" class="inner-links">
+                    <i class="fa-brands fa-instagram socia"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <hr class="underline">
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <div class="copyrights">
+              <p class="copyR">
+                Copyright <i class="fa-solid fa-copyright"></i> 2024 - InfyData. All Rights Reserved
               </p>
+              <p class="design">
+                Design and Developed By <a href="https://aptsolglobal.com/" target="_blank" class="design-link">Aptsol
+                  Global Tech Pvt Ltd</a>
+              </p>
+            </div>
           </div>
-          <div class="col-md-3">
-              <div class="foot_head">
-                  <h4 class="food_h">
-                      Services
-                  </h4>
-              </div>
-              <div class="foot_links">
-                  <ul class="list-group">
-                      <li class="list-items"><a href="" class="list-links">Cloud Services</a>
-                      </li>
-                      <li class="list-items"><a href=""class="list-links">IT-Managed Services</a>
-                      </li>
-                      <li class="list-items"><a href="" class="list-links">Network Security</a>
-                      </li>
-                      <li class="list-items"><a href="" class="list-links">Data Center Solution</a>
-                      </li>
-                      <li class="list-items"><a href=""class="list-links">Infrastucture Modernization</a>
-                      </li>
-                      <li class="list-items"><a href="" class="list-links">End User Computing</a>
-                      </li>
-                      <li class="list-items"><a href="" class="list-links">Cyber Security Solutions</a>
-                      </li>
-                      <li class="list-items"><a href=""class="list-links">Integration & Deployment</a>
-                      </li>
-                      <li class="list-items"><a href="" class="list-links">UPS & Power Solutions</a>
-                      </li>
-                      
-                  </ul>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="foot_head">
-                  <h4 class="food_h">
-                      Solutions
-                  </h4>
-              </div>
-              <div class="foot_links">
-                  <ul class="list-group">
-                      <li class="list-items"><a href="/Virtualization" class="list-links">Virtualization</a>
-                      </li>
-                      <li class="list-items"><a href="/migrations_page" class="list-links">Migration</a>
-                      </li>
-                      <li class="list-items"><a href="/security" class="list-links">Security</a>
-                      </li>
-                      <li class="list-items"><a href="/backup" class="list-links">Backup</a>
-                      </li>
-                      <li class="list-items"><a href="/mobility" class="list-links">Mobility</a>
-                      </li>
-                      <li class="list-items"><a href="/storage" class="list-links">Storage</a>
-                      </li>
-                      
-                  </ul>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="foot_head">
-                  <h4 class="food_h">
-                     Contact Us
-                  </h4>
-              </div>
-              <div class="foot_links">
-                  <ul class="list-group">
-                      <li class="list-items foot_cont">
-                          <a href="" class="list-loc">Aptsol Global Tech Pvt. Ltd
-                            Imperial Square, 1st Floor, HUDA Techno Enclave
-                            Beside Medicover Hospitals
-                            HITECH City Hyderabad, Telangana 500081</a>
-                      </li>
-                      <li class="list-items foot_cont">
-                          <a href=""  class="list-phone">
-                              +91 9874563210
-                          </a>
-                      </li>
-                      <li class="list-items foot_cont">
-                          <a href=""  class="list-mail">
-                              info@infydata.com
-                          </a>
-                      </li>
-                      <li class="list-items foot_cont">
-                          <a href=""  class="list-open_hours">
-                              Opening Hours : 10:00 Am - 6:00 Pm
-                          </a>
-                      </li>
-                  </ul>
-                  
-              </div>
-          </div>
+        </div>
       </div>
-      <div class="row">
-          <div class="col-md-12">
-              <div class="social_links">
-                  <ul class="list-social">
-                      <li class="list-social-links">
-                          <a href="" class="inner-links">
-                              <i class="fa-brands fa-facebook-f socia "></i>
-                          </a>
-                      </li>
-                      <li class="list-social-links">
-                          <a href="" class="inner-links">
-                              <i class="fa-brands fa-linkedin-in socia"></i>
-                          </a>
-                      </li>
-                      <li class="list-social-links">
-                          <a href="" class="inner-links">
-                              <i class="fa-brands fa-twitter socia"></i>
-                          </a>
-                      </li>
-                      <li class="list-social-links">
-                          <a href="" class="inner-links">
-                              <i class="fa-brands fa-instagram socia"></i>
-                          </a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-12">
-              <hr class="underline">
-          </div>
-      </div>
-      <div class="row text-center">
-          <div class="col-md-12">
-              <div class="copyrights">
-                  <p class="copyR">
-                     Copyright <i class="fa-solid fa-copyright"></i> 2024 - InfyData. All Rights Reserved
-                  </p>
-                  <p class="design">
-                    Design and Developed By <a href="https://aptsolglobal.com/" target="_blank" class="design-link">Aptsol Global Tech Pvt Ltd</a>
-                  </p>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+    </section>
 
 
-<!--Footer Ends-->
-  
+    <!--Footer Ends-->
+
   </main>
   <script src="{% static 'assets/js/bootstrap.bundle.min.js'%}"></script>
   <script src="{% static 'assets/js/script.js'%}"></script>
   <script src="{% static 'assets/js/splide.min.js'%}"></script>
   <script src="{% static 'assets/js/chatbot.js'%}"></script>
+  <script src="{% static 'assets/js/sweetalert.min.js'%}"></script>
+
 
   <script src="{% static 'assets/js/splide-auto-scroll.min.js'%}"></script>
- 
+
+
+
+  <script>
+
+  </script>
   <!--splide slides starts-->
   <script>
     new Splide('#slider1', {
@@ -323,7 +343,7 @@
       },
     }).mount(window.splide.Extensions);
   </script>
-   <script>
+  <script>
     new Splide('#slider2', {
       type: 'loop',
       autoScroll: {
@@ -331,7 +351,7 @@
       },
     }).mount(window.splide.Extensions);
   </script>
-   <script>
+  <script>
     new Splide('#slider3', {
       type: 'loop',
       autoScroll: {
@@ -341,7 +361,8 @@
   </script>
   <!--splide slides Ends-->
   <script>
-    
+
   </script>
 </body>
+
 </html>

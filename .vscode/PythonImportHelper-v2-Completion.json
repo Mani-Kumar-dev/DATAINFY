@@ -16,6 +16,38 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -29,6 +61,38 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -57,6 +121,14 @@
     },
     {
         "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -96,6 +168,22 @@
         "documentation": {}
     },
     {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -118,6 +206,54 @@
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "ContactSubmission",
+        "importPath": "innerpages.models",
+        "description": "innerpages.models",
+        "isExtraImport": true,
+        "detail": "innerpages.models",
+        "documentation": {}
+    },
+    {
+        "label": "ContactSubmission",
+        "importPath": "innerpages.models",
+        "description": "innerpages.models",
+        "isExtraImport": true,
+        "detail": "innerpages.models",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "innerpages",
+        "description": "innerpages",
+        "isExtraImport": true,
+        "detail": "innerpages",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "ContactForm",
+        "importPath": "innerpages.forms",
+        "description": "innerpages.forms",
+        "isExtraImport": true,
+        "detail": "innerpages.forms",
         "documentation": {}
     },
     {
@@ -206,7 +342,7 @@
         "kind": 5,
         "importPath": "Infinity.Infinity.settings",
         "description": "Infinity.Infinity.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'infiapp',\n]\nMIDDLEWARE = [",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'infiapp',\n    'innerpages',\n]",
         "detail": "Infinity.Infinity.settings",
         "documentation": {}
     },
@@ -287,7 +423,7 @@
         "kind": 5,
         "importPath": "Infinity.Infinity.settings",
         "description": "Infinity.Infinity.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR,'static'),\n]",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR,'static'),\n]\n# SMTP Configuration",
         "detail": "Infinity.Infinity.settings",
         "documentation": {}
     },
@@ -296,7 +432,7 @@
         "kind": 5,
         "importPath": "Infinity.Infinity.settings",
         "description": "Infinity.Infinity.settings",
-        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR,'static'),\n]",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR,'static'),\n]\n# SMTP Configuration\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'",
         "detail": "Infinity.Infinity.settings",
         "documentation": {}
     },
@@ -305,7 +441,7 @@
         "kind": 5,
         "importPath": "Infinity.Infinity.settings",
         "description": "Infinity.Infinity.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR,'static'),\n]",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR,'static'),\n]\n# SMTP Configuration\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'",
         "detail": "Infinity.Infinity.settings",
         "documentation": {}
     },
@@ -314,7 +450,7 @@
         "kind": 5,
         "importPath": "Infinity.Infinity.settings",
         "description": "Infinity.Infinity.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR,'static'),\n]",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR,'static'),\n]\n# SMTP Configuration\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587  # or the port your SMTP server uses\nEMAIL_HOST_USER = 'maqsood.a.ansari@gmail.com'\nEMAIL_HOST_PASSWORD = 'cnpqmyjhplcpysqu'",
         "detail": "Infinity.Infinity.settings",
         "documentation": {}
     },
@@ -323,7 +459,70 @@
         "kind": 5,
         "importPath": "Infinity.Infinity.settings",
         "description": "Infinity.Infinity.settings",
-        "peekOfCode": "STATICFILES_DIRS = [\n    os.path.join(BASE_DIR,'static'),\n]",
+        "peekOfCode": "STATICFILES_DIRS = [\n    os.path.join(BASE_DIR,'static'),\n]\n# SMTP Configuration\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587  # or the port your SMTP server uses\nEMAIL_HOST_USER = 'maqsood.a.ansari@gmail.com'\nEMAIL_HOST_PASSWORD = 'cnpqmyjhplcpysqu'\nEMAIL_USE_TLS = True  # or False if your SMTP server doesn't use TLS",
+        "detail": "Infinity.Infinity.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "Infinity.Infinity.settings",
+        "description": "Infinity.Infinity.settings",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587  # or the port your SMTP server uses\nEMAIL_HOST_USER = 'maqsood.a.ansari@gmail.com'\nEMAIL_HOST_PASSWORD = 'cnpqmyjhplcpysqu'\nEMAIL_USE_TLS = True  # or False if your SMTP server doesn't use TLS\nDEFAULT_FROM_EMAIL = 'maqsood.a.ansari@gmail.com'",
+        "detail": "Infinity.Infinity.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "kind": 5,
+        "importPath": "Infinity.Infinity.settings",
+        "description": "Infinity.Infinity.settings",
+        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587  # or the port your SMTP server uses\nEMAIL_HOST_USER = 'maqsood.a.ansari@gmail.com'\nEMAIL_HOST_PASSWORD = 'cnpqmyjhplcpysqu'\nEMAIL_USE_TLS = True  # or False if your SMTP server doesn't use TLS\nDEFAULT_FROM_EMAIL = 'maqsood.a.ansari@gmail.com'",
+        "detail": "Infinity.Infinity.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "Infinity.Infinity.settings",
+        "description": "Infinity.Infinity.settings",
+        "peekOfCode": "EMAIL_PORT = 587  # or the port your SMTP server uses\nEMAIL_HOST_USER = 'maqsood.a.ansari@gmail.com'\nEMAIL_HOST_PASSWORD = 'cnpqmyjhplcpysqu'\nEMAIL_USE_TLS = True  # or False if your SMTP server doesn't use TLS\nDEFAULT_FROM_EMAIL = 'maqsood.a.ansari@gmail.com'",
+        "detail": "Infinity.Infinity.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "kind": 5,
+        "importPath": "Infinity.Infinity.settings",
+        "description": "Infinity.Infinity.settings",
+        "peekOfCode": "EMAIL_HOST_USER = 'maqsood.a.ansari@gmail.com'\nEMAIL_HOST_PASSWORD = 'cnpqmyjhplcpysqu'\nEMAIL_USE_TLS = True  # or False if your SMTP server doesn't use TLS\nDEFAULT_FROM_EMAIL = 'maqsood.a.ansari@gmail.com'",
+        "detail": "Infinity.Infinity.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_PASSWORD",
+        "kind": 5,
+        "importPath": "Infinity.Infinity.settings",
+        "description": "Infinity.Infinity.settings",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = 'cnpqmyjhplcpysqu'\nEMAIL_USE_TLS = True  # or False if your SMTP server doesn't use TLS\nDEFAULT_FROM_EMAIL = 'maqsood.a.ansari@gmail.com'",
+        "detail": "Infinity.Infinity.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_TLS",
+        "kind": 5,
+        "importPath": "Infinity.Infinity.settings",
+        "description": "Infinity.Infinity.settings",
+        "peekOfCode": "EMAIL_USE_TLS = True  # or False if your SMTP server doesn't use TLS\nDEFAULT_FROM_EMAIL = 'maqsood.a.ansari@gmail.com'",
+        "detail": "Infinity.Infinity.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_FROM_EMAIL",
+        "kind": 5,
+        "importPath": "Infinity.Infinity.settings",
+        "description": "Infinity.Infinity.settings",
+        "peekOfCode": "DEFAULT_FROM_EMAIL = 'maqsood.a.ansari@gmail.com'",
         "detail": "Infinity.Infinity.settings",
         "documentation": {}
     },
@@ -332,7 +531,7 @@
         "kind": 5,
         "importPath": "Infinity.Infinity.urls",
         "description": "Infinity.Infinity.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path(\"\",include('infiapp.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path(\"\",include('infiapp.urls')),\n    path(\"\",include('innerpages.urls')),\n]",
         "detail": "Infinity.Infinity.urls",
         "documentation": {}
     },
@@ -343,6 +542,114 @@
         "description": "Infinity.Infinity.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "Infinity.Infinity.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "Infinity.innerpages.migrations.0001_initial",
+        "description": "Infinity.innerpages.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ContactSubmission',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('first_name', models.CharField(max_length=100)),",
+        "detail": "Infinity.innerpages.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "InnerpagesConfig",
+        "kind": 6,
+        "importPath": "Infinity.innerpages.apps",
+        "description": "Infinity.innerpages.apps",
+        "peekOfCode": "class InnerpagesConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'innerpages'",
+        "detail": "Infinity.innerpages.apps",
+        "documentation": {}
+    },
+    {
+        "label": "ContactForm",
+        "kind": 6,
+        "importPath": "Infinity.innerpages.forms",
+        "description": "Infinity.innerpages.forms",
+        "peekOfCode": "class ContactForm(forms.Form):\n    first_name = forms.CharField(max_length=100)\n    last_name = forms.CharField(max_length=100)\n    company_name = forms.CharField(max_length=100)\n    work_email = forms.EmailField()\n    phone_type_choices = [\n        ('business', 'Business'),\n        ('personal', 'Personal'),\n    ]\n    phone_type = forms.ChoiceField(choices=phone_type_choices)",
+        "detail": "Infinity.innerpages.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ContactSubmission",
+        "kind": 6,
+        "importPath": "Infinity.innerpages.models",
+        "description": "Infinity.innerpages.models",
+        "peekOfCode": "class ContactSubmission(models.Model):\n    first_name = models.CharField(max_length=100)\n    last_name = models.CharField(max_length=100)\n    company_name = models.CharField(max_length=100)\n    work_email = models.EmailField()\n    phone_type_choices = [\n        ('business', 'Business'),\n        ('personal', 'Personal'),\n    ]\n    phone_type = models.CharField(max_length=10, choices=phone_type_choices)",
+        "detail": "Infinity.innerpages.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "Infinity.innerpages.urls",
+        "description": "Infinity.innerpages.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"contact\",views.contact,name=\"contact\"),\n    path(\"Virtualization\",views.Virtualization,name=\"Virtualization\"),\n    path(\"migrations_page\",views.migrations_page,name=\"migrations_page\"),\n     path(\"security\",views.security,name=\"security\"),\n    path(\"mobility\",views.mobility,name=\"mobility\"),\n    path(\"storage\",views.storage,name=\"storage\"),\n    path(\"backup\",views.backup,name=\"backup\"),\n]",
+        "detail": "Infinity.innerpages.urls",
+        "documentation": {}
+    },
+    {
+        "label": "contact",
+        "kind": 2,
+        "importPath": "Infinity.innerpages.views",
+        "description": "Infinity.innerpages.views",
+        "peekOfCode": "def contact(request):\n    if request.method == 'POST':\n        form = ContactForm(request.POST)\n        if form.is_valid():\n            first_name = form.cleaned_data['first_name']\n            last_name = form.cleaned_data['last_name']\n            company_name = form.cleaned_data['company_name']\n            work_email = form.cleaned_data['work_email']\n            phone_type = form.cleaned_data['phone_type']\n            phone_number = form.cleaned_data['phone_number']",
+        "detail": "Infinity.innerpages.views",
+        "documentation": {}
+    },
+    {
+        "label": "Virtualization",
+        "kind": 2,
+        "importPath": "Infinity.innerpages.views",
+        "description": "Infinity.innerpages.views",
+        "peekOfCode": "def Virtualization(request):\n    return render(request,\"Virtualization.html\")\ndef migrations_page(request):\n    return render(request,\"migrations_page.html\")\ndef security(request):\n    return render(request,\"security.html\")\ndef mobility(request):\n    return render(request,\"mobility.html\")\ndef backup(request):\n    return render(request,\"backup.html\")",
+        "detail": "Infinity.innerpages.views",
+        "documentation": {}
+    },
+    {
+        "label": "migrations_page",
+        "kind": 2,
+        "importPath": "Infinity.innerpages.views",
+        "description": "Infinity.innerpages.views",
+        "peekOfCode": "def migrations_page(request):\n    return render(request,\"migrations_page.html\")\ndef security(request):\n    return render(request,\"security.html\")\ndef mobility(request):\n    return render(request,\"mobility.html\")\ndef backup(request):\n    return render(request,\"backup.html\")\ndef storage(request):\n    return render(request,\"storage.html\")",
+        "detail": "Infinity.innerpages.views",
+        "documentation": {}
+    },
+    {
+        "label": "security",
+        "kind": 2,
+        "importPath": "Infinity.innerpages.views",
+        "description": "Infinity.innerpages.views",
+        "peekOfCode": "def security(request):\n    return render(request,\"security.html\")\ndef mobility(request):\n    return render(request,\"mobility.html\")\ndef backup(request):\n    return render(request,\"backup.html\")\ndef storage(request):\n    return render(request,\"storage.html\")",
+        "detail": "Infinity.innerpages.views",
+        "documentation": {}
+    },
+    {
+        "label": "mobility",
+        "kind": 2,
+        "importPath": "Infinity.innerpages.views",
+        "description": "Infinity.innerpages.views",
+        "peekOfCode": "def mobility(request):\n    return render(request,\"mobility.html\")\ndef backup(request):\n    return render(request,\"backup.html\")\ndef storage(request):\n    return render(request,\"storage.html\")",
+        "detail": "Infinity.innerpages.views",
+        "documentation": {}
+    },
+    {
+        "label": "backup",
+        "kind": 2,
+        "importPath": "Infinity.innerpages.views",
+        "description": "Infinity.innerpages.views",
+        "peekOfCode": "def backup(request):\n    return render(request,\"backup.html\")\ndef storage(request):\n    return render(request,\"storage.html\")",
+        "detail": "Infinity.innerpages.views",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "kind": 2,
+        "importPath": "Infinity.innerpages.views",
+        "description": "Infinity.innerpages.views",
+        "peekOfCode": "def storage(request):\n    return render(request,\"storage.html\")",
+        "detail": "Infinity.innerpages.views",
         "documentation": {}
     },
     {

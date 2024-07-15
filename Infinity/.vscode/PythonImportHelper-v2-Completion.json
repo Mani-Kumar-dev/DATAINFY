@@ -32,6 +32,14 @@
         "documentation": {}
     },
     {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -177,11 +185,35 @@
         "documentation": {}
     },
     {
+        "label": "ContactSubmission",
+        "importPath": "infiapp.models",
+        "description": "infiapp.models",
+        "isExtraImport": true,
+        "detail": "infiapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "views",
         "importPath": "innerpages",
         "description": "innerpages",
         "isExtraImport": true,
         "detail": "innerpages",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
         "documentation": {}
     },
     {
@@ -419,6 +451,24 @@
         "documentation": {}
     },
     {
+        "label": "ContactForm",
+        "kind": 6,
+        "importPath": "innerpages.forms",
+        "description": "innerpages.forms",
+        "peekOfCode": "class ContactForm(forms.Form):\n    first_name = forms.CharField(max_length=100)\n    last_name = forms.CharField(max_length=100)\n    company_name = forms.CharField(max_length=100)\n    work_email = forms.EmailField()\n    phone_type_choices = [\n        ('business', 'Business'),\n        ('personal', 'Personal'),\n    ]\n    phone_type = forms.ChoiceField(choices=phone_type_choices)",
+        "detail": "innerpages.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ContactSubmission",
+        "kind": 6,
+        "importPath": "innerpages.models",
+        "description": "innerpages.models",
+        "peekOfCode": "class ContactSubmission(models.Model):\n    first_name = models.CharField(max_length=100)\n    last_name = models.CharField(max_length=100)\n    company_name = models.CharField(max_length=100)\n    work_email = models.EmailField()\n    phone_type_choices = [\n        ('business', 'Business'),\n        ('personal', 'Personal'),\n    ]\n    phone_type = models.CharField(max_length=10, choices=phone_type_choices)",
+        "detail": "innerpages.models",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "innerpages.urls",
@@ -432,7 +482,7 @@
         "kind": 2,
         "importPath": "innerpages.views",
         "description": "innerpages.views",
-        "peekOfCode": "def contact(request):\n    return render(request,\"contact.html\")\ndef Virtualization(request):\n    return render(request,\"Virtualization.html\")\ndef migrations_page(request):\n    return render(request,\"migrations_page.html\")\ndef security(request):\n    return render(request,\"security.html\")\ndef mobility(request):\n    return render(request,\"mobility.html\")",
+        "peekOfCode": "def contact(request):\n    if request.method == 'POST':\n        form = ContactForm(request.POST)\n        if form.is_valid():\n            first_name = form.cleaned_data['first_name']\n            last_name = form.cleaned_data['last_name']\n            company_name = form.cleaned_data['company_name']\n            work_email = form.cleaned_data['work_email']\n            phone_type = form.cleaned_data['phone_type']\n            phone_number = form.cleaned_data['phone_number']",
         "detail": "innerpages.views",
         "documentation": {}
     },

@@ -81,7 +81,7 @@ ul#slider2-list {
 
 }
 h4.grw {
-    font-size: 25px;
+    font-size: 22px;
 }
 .btn_get {
     margin: -5px 0 0 0;
@@ -283,6 +283,57 @@ a.list-open_hours::before{
     font-size: 18px;
 }
 
+.inner_head {
+    margin: 10% 0 0 0;
+}
+.inner_tech_head {
+    margin: 20px 0 0 0;
+}
+.inner_tech_head h2 {
+    font-size: 24px;}
+.inner_tech_content p{
+    font-size: 16px;
+    }
+    .image_inner {
+        width: 100%;
+        margin: 120px auto;
+    }
+    section.inner_virt {
+        margin: -85px 0 0 0;
+    }
+    .card_inner_head h4 {
+        font-size: 15px;
+        margin: 0 0 10px 0;
+    }
+    li.list-items a{
+        font-size: 12px;
+    }
+    a.list-links::before {
+        position: absolute;
+        content: "\f105";
+        font-family: 'FontAwesome';
+        left: -15px;
+        font-size: 12px;
+        top: 0px;
+    }
+    .foot_logo {
+        width: 50%;
+        margin: -22px auto;
+    }
+    .weo_head h4 {
+        color: #fff;
+        margin: 0 0 25px 0;
+        font-size: 15px;
+    }
+    .card.weocard{
+        height: 70vh;
+    }
+    .head_ext h4 {
+        font-size: 18px;
+    }
+    .head_ext_content p {
+        font-size: 15px;
+    }
 }
 @media only screen and (min-width:993px) and (max-width:1080px){
     button.canva_cls {
@@ -328,7 +379,50 @@ a.list-open_hours::before{
     left: 50px;
     bottom: -32px;
 }
-
+.card.weocard{
+    height: 70vh;
+}
+h4.grw{
+    font-size: 40px;
+}
+ul.dropdown-menu.show{
+    margin: 4% 0 0 -771%;
+    padding: 85% 0%;
+}
+.image_inner {
+    width: 100%;
+    margin: 76px auto;
+}
+.weo_head h4{
+    font-size: 26px;
+}
+.head_ext_content p {
+    font-size: 14px;
+}
+section.inner_mgts {
+    margin-top: -12% !IMPORTANT;
+}
+.card.migrat{
+    height: 40vh;
+}
+.inner_tech_content p{
+    margin: 20px 0 0 0;
+}
+.inner_tech_head {
+    margin: 48px 0 35px 0;
+}
+section.inner_virt {
+    margin: -8% 0 0 0;
+}
+ul.dropdown-menu{
+    left:-681px;
+}
+ul.dropdown-menu.Servi_down.show {
+    left: -829%;
+}
+ul.dropdown-menu.Servi_down {
+    margin-left: 82px;
+}
 }
 @media only screen and (min-width:1081px){
     .canva_cls {
@@ -349,6 +443,7 @@ a.list-open_hours::before{
         
     }
 
+
 }
 @media only screen and (min-width:1440px){
     .card.About_ser{
@@ -356,5 +451,109 @@ a.list-open_hours::before{
     }
     .footer{
         height: auto;
+    }
+    /* ul.dropdown-menu {
+        margin: 4% 0 0 -1232% !important;
+
+    } */
+}
+
+
+/*----Solution Media Queries starts---*/
+@media only screen and (min-width:320px) and (max-width:374px){
+    .inner_head {
+        margin: 20% 0 0 6%;
+        display: block;
+        width: 0;
+    }
+    .inner_tech_head h2 {
+        font-size: 22px;
+        margin: -35% 0 0 0;
+    }
+    .inner_tech_content p {
+        font-size: 16px;
+    }
+    .image_inner {
+       width: 100%;
+        margin: 25px auto;
+    }
+    .card_inner_head h4 {
+        font-size: 16px;
+        margin: 12px 0 0 0;
+    }
+}
+@media only screen and (min-width:375px) and (max-width:512px){
+    .inner_head {
+        margin: 13% 0 0 15%;
+        display: block;
+        width: 0;
+    }
+    .inner_tech_head h2 {
+        font-size: 22px;
+        margin: -35% 0 0 0;
+    }
+    .inner_tech_content p {
+        font-size: 16px;
+    }
+    .image_inner {
+       width: 100%;
+        margin: 25px auto;
+    }
+    .card_inner_head h4 {
+        font-size: 16px;
+        margin: 12px 0 0 0;
+    }
+    .inner_tech_head {
+        margin: 105px 0 0 0;
+    }
+   
+}
+@media only screen and (min-width:513px) and (max-width:767px){
+    .inner_head {
+        margin: 16% 0 0 0;
+    }
+    .inner_tech_head {
+        margin: 0px 0 0 0;
+    }
+    .inner_tech_head h2 {
+        color: #043b5c;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .image_inner {
+        width: 100%;
+        margin: 40px 0 0 0;
+    }
+    .card_inner_head h4 {
+        font-size: 20px;
+        margin: 20px 0 0px 0;
+    }
+}
+
+/*----Solution Media Queries ends---*/
+
+
+/*---contact us ----*/
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 20px;
+    }
+
+    .custom-btn {
+        width: 100%;
+    }
+
+    .form-floating {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-us {
+        padding: 10px;
+    }
+
+    .form-floating {
+        margin-bottom: 0.5rem;
     }
 }

@@ -4,6 +4,7 @@
 //   event.preventDefault();
 // })
 
+
 /*--Navbar starts-*/
 window.addEventListener('scroll',function (){
     let navbar =this.document.querySelector('.navbar');
@@ -31,3 +32,33 @@ window.addEventListener('scroll',function (){
         }
     }
 })
+
+
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+              } else {
+                  event.preventDefault(); // Prevent default form submission
+                  Swal.fire({
+                      title: 'Sent!',
+                      text: 'Your message has been sent. We will get back to you soon!',
+                      icon: 'success'
+                  }).then(() => {
+                      form.submit(); // Submit the form programmatically
+                  });
+              }
+
+              form.classList.add('was-validated')
+          }, false)
+      })
+})()
